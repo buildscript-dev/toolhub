@@ -4,6 +4,17 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>ToolHub — 12 Free Online Tools, No Sign-up</title>
+    <!-- SPA deep-link restore for GitHub Pages (pairs with public/404.html) -->
+    <script>
+      (function (l) {
+        if (l.search[1] === '/') {
+          var decoded = l.search.slice(1).split('&').map(function (s) {
+            return s.replace(/~and~/g, '&')
+          }).join('?')
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + decoded + l.hash)
+        }
+      })(window.location)
+    </script>
     <meta name="description" content="Free online tools: word counter, password generator, QR code maker, JSON formatter, Base64, hash, color & unit converters. Fast, private, no sign-up. Everything runs in your browser." />
     <meta name="keywords" content="online tools, free tools, word counter, password generator, qr code generator, json formatter, base64 encode, hash generator, unit converter, color converter" />
     <link rel="canonical" href="https://buildscript-dev.github.io/toolhub/" />
