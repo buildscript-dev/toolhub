@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://buildscript-dev.github.io/toolhub/sitemap.xml
