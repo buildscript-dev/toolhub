@@ -36,6 +36,8 @@ export default function Layout({ children }) {
           <div className="flex gap-4">
             <Link to="/about" className="hover:text-slate-200">About</Link>
             <Link to="/privacy" className="hover:text-slate-200">Privacy</Link>
+            <Link to="/terms" className="hover:text-slate-200">Terms</Link>
+            <Link to="/contact" className="hover:text-slate-200">Contact</Link>
           </div>
         </div>
       </footer>
